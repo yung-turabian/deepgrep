@@ -1,1 +1,1 @@
-# deepgrep (called like dg)
+# deepgrep ➿ (called like dg)
