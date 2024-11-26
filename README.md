@@ -1,0 +1,1 @@
+# deepgrep (called like dg)
