@@ -1,0 +1,28 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/henry/.cache/dune/db
+# Workspace root: /home/henry/Development/QuickGrep
+# Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/henry/.opam/5.1.1/bin/ocamlc.opt -config > /tmp/dune_ae6de0_output
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamldep.opt -modules -impl bin/deepgrep.ml) > _build/default/bin/.deepgrep.eobjs/dune__exe__Deepgrep.impl.d
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamldep.opt -modules -impl bin/ExtString.ml) > _build/default/bin/.deepgrep.eobjs/dune__exe__ExtString.impl.d
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamldep.opt -modules -impl bin/ExtIO.ml) > _build/default/bin/.deepgrep.eobjs/dune__exe__ExtIO.impl.d
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I bin/.deepgrep.eobjs/byte -no-alias-deps -opaque -o bin/.deepgrep.eobjs/byte/dune__exe.cmo -c -impl bin/.deepgrep.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.deepgrep.eobjs/byte -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/byte/dune__exe__ExtString.cmo -c -impl bin/ExtString.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.deepgrep.eobjs/byte -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/byte/dune__exe__ExtIO.cmo -c -impl bin/ExtIO.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I bin/.deepgrep.eobjs/byte -I bin/.deepgrep.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o bin/.deepgrep.eobjs/native/dune__exe.cmx -c -impl bin/.deepgrep.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.deepgrep.eobjs/byte -I bin/.deepgrep.eobjs/native -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -I lib/.dir.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/native/dune__exe__ExtString.cmx -c -impl bin/ExtString.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.deepgrep.eobjs/byte -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/byte/dune__exe__Deepgrep.cmo -c -impl bin/deepgrep.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.deepgrep.eobjs/byte -I bin/.deepgrep.eobjs/native -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -I lib/.dir.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/native/dune__exe__ExtIO.cmx -c -impl bin/ExtIO.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.deepgrep.eobjs/byte -I bin/.deepgrep.eobjs/native -I /home/henry/.opam/5.1.1/lib/ocaml/str -I /home/henry/.opam/5.1.1/lib/ocaml/unix -I lib/.dir.objs/byte -I lib/.dir.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.deepgrep.eobjs/native/dune__exe__Deepgrep.cmx -c -impl bin/deepgrep.ml)
+$ (cd _build/default && /home/henry/.opam/5.1.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/deepgrep.exe lib/dir.cmxa /home/henry/.opam/5.1.1/lib/ocaml/str/str.cmxa /home/henry/.opam/5.1.1/lib/ocaml/unix/unix.cmxa bin/.deepgrep.eobjs/native/dune__exe.cmx bin/.deepgrep.eobjs/native/dune__exe__ExtIO.cmx bin/.deepgrep.eobjs/native/dune__exe__ExtString.cmx bin/.deepgrep.eobjs/native/dune__exe__Deepgrep.cmx)

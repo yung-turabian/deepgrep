@@ -1,0 +1,4 @@
+(executable
+ (public_name dg)
+ (name deepgrep)
+ (libraries dir str unix))
