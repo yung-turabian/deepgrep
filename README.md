@@ -3,7 +3,7 @@
 A recursive pattern matching CLI-program.
 
 # About
-The premier tool for pattern checking recursively. Quite similar to ripgrep but implemented for pracitce in OCaml, a very interesting and safe functional programming language.
+The premier tool for pattern checking recursively. Quite similar to ripgrep but implemented, for practice, in OCaml--a very interesting and safe functional programming language.
 
 # Building & Installing
 
