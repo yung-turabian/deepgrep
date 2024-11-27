@@ -11,7 +11,7 @@ For OCaml projects it's recommended to use Opam and the dune build system. As su
 
 ```bash
 $ dune install
-$ dg "something" this_folder/
+$ dg something this_folder/
 ```
 
 # License 
