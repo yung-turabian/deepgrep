@@ -1,4 +1,4 @@
-# deepgrep ➿ (called like dg)
+# deepgrep ➿ (dg)
 
 A recursive pattern matching CLI-program.
 
@@ -11,6 +11,7 @@ For OCaml projects it's recommended to use Opam and the dune build system. As su
 
 ```bash
 $ dune install
+$ dg
 ```
 
 # License 
