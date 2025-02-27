@@ -1,0 +1,9 @@
+(executable
+ (public_name dg)
+ (name deepgrep)
+ (libraries deepgrep str unix))
+
+(install
+ (files deepgrep.exe)
+ (section bin)
+)

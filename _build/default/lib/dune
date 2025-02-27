@@ -1,2 +1,3 @@
 (library
- (name dir))
+ (name deepgrep)
+ (public_name deepgrep.util))

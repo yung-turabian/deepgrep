@@ -20,6 +20,7 @@ let print_head lst =
   | head :: _ -> print_endline head 
 
 
-let is_invisible file =
-  if file.[0] = '.' then true
-  else false
+let is_hidden file =
+    let prefix = "." in
+    if String.starts_with ~prefix file then true
+    else false
