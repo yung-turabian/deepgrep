@@ -1,2 +1,2 @@
 
-let ignoreHiddenFiles = true
+let show_hidden = ref false

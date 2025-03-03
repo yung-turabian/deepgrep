@@ -1,12 +1,13 @@
 open Printf
 
-let usage_msg = "dg [-verbose] <pattern> <directory>"
+let usage_msg = "dg [--verbose] <pattern> <directory>"
 let verbose = ref false
 let pattern = ref ""
 let directory = ref ""
 
 let speclist =
-  [("-verbose", Arg.Set verbose, "Output debug information");
+  [("--verbose", Arg.Set verbose, "Output debug information");
+   ("--hidden", Arg.Set Settings.show_hidden, "Show hidden files")
   ]
 
 type filesystem = File of string | Directory of filesystem
@@ -19,7 +20,7 @@ let read_whole_chan chan filename =
       Buffer.add_string buf line;
       Buffer.add_char buf '\n';
       if GamlString.strstr line !pattern
-      then printf "\x1B[1;34m%s\x1B[0m\n\x1B[33m%d\x1B[0m: %s\n\n" filename line_no line;
+      then printf "\x1B[1;34m%s\x1B[0m\n\x1B[33m%d\x1B[0m:%s\n\n" filename line_no line;
       loop(line_no)
   in
     try loop(line_no) with
@@ -41,7 +42,7 @@ let rec grab_files path =
    try
       let entry = readdir_stripped handle in
       let full_path = concat path entry in
-         if Settings.ignoreHiddenFiles && is_hidden entry then
+         if not !Settings.show_hidden && is_hidden entry then
              ()
          else if is_directory full_path then
             grab_files full_path
